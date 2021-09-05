@@ -1,0 +1,257 @@
+/*! Начало обнуляющего стиля */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/*! Конец обнуляющего стиля */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+html {
+	background-color: #edf0f2;
+}
+
+body {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Montserrat", sans-serif;
+	-webkit-box-shadow: 4px 4px 29px -21px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 4px 4px 29px -21px rgba(34, 60, 80, 0.2);
+	box-shadow: 4px 4px 29px -21px rgba(34, 60, 80, 0.2);
+}
+
+.leftside,
+.rightside {
+	display: flex;
+	flex-direction: column;
+}
+
+.leftside {
+	background-color: #000;
+	-webkit-box-shadow: 4px 4px 29px -21px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 4px 4px 29px -21px rgba(34, 60, 80, 0.2);
+	box-shadow: 4px 4px 29px -21px rgba(34, 60, 80, 0.2);
+	padding-right: 20px;
+}
+
+.rightside {
+	background-color: #fff;
+}
+
+.name {
+	margin-top: 100px;
+}
+
+.lsblock {
+	margin-left: 30px;
+	margin-bottom: 30px;
+	flex-grow: 1;
+}
+
+.rsblock {
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.myphoto {
+	max-width: 300px;
+	display: block;
+	margin-top: 50px;
+}
+
+h1 {
+	font-size: 52px;
+	font-weight: 600;
+	color: #8f754f;
+	line-height: 80px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #8f754f;
+	line-height: 40px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #385f71;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+.leftside li {
+	color: #fff;
+	line-height: 20px;
+}
+
+.rightside li {
+	color: #000;
+	line-height: 20px;
+	text-indent: 5px;
+	font-weight: 400;
+}
+
+.rightside li::before {
+	color: #000;
+	content: "-";
+	padding-right: 5px;
+}
+
+.rightside p {
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+.skills {
+	text-indent: 5px;
+}
+
+.skills li::before {
+	content: "-";
+	color: #fff;
+	padding-right: 5px;
+}
+
+.rsblock__myobj {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.rsblock__companyname {
+	color: #8f754f;
+	font-weight: 600;
+}
+
+.about {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-right: 100px;
+}
+
+.about p {
+	font-size: 16px;
+}
+
+.social a {
+	text-align: center;
+	width: 48px;
+	height: 48px;
+	float: left;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	border-radius: 24px;
+	margin: 0 10px 8px 0;
+	padding: 9px;
+	color: #000;
+}
+
+.github a:hover {
+	background: #191919;
+	color: #fff;
+}
+.instagram a:hover {
+	background: #3f729b;
+	color: #fff;
+}
+.vk a:hover {
+	background: #5d84ae;
+	color: #fff;
+}
+.linkedin a:hover {
+	background: #0e76a8;
+	color: #fff;
+}
+.telegram a:hover {
+	background: #249bd7;
+	color: #fff;
+}
+.whatsapp a:hover {
+	background: #50b154;
+	color: #fff;
+}
+
+.socialicon {
+	flex-grow: 20;
+	display: flex;
+	align-items: flex-end;
+}
