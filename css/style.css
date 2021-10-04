@@ -223,6 +223,7 @@ h3 {
 	margin: 0 10px 8px 0;
 	padding: 9px;
 	color: #000;
+	transition: all 0.3s ease 0s;
 }
 
 .github a:hover {
@@ -254,4 +255,19 @@ h3 {
 	flex-grow: 20;
 	display: flex;
 	align-items: flex-end;
+}
+
+.lsblock__portfolio {
+	color: #fff;
+	text-decoration: underline;
+	transition: all 0.3s ease 0s;
+}
+
+.lsblock__portfolio:hover {
+	color: #8f754f;
+	transition: all 0.3s ease 0s;
+}
+
+.lsblock__portfolio:active {
+	color: #fff;
 }
